@@ -1,0 +1,236 @@
+/*Common elements*/
+
+body {
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    font-weight: bolder;
+    background-image: url(./assets/Background\ Photos/GradientPawPrint.jpg); 
+    background-size: cover;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 1;
+    padding: 1;
+}
+
+/*Header*/
+/*Nav Bars*/
+nav{
+   background-color: transparent;
+   display: ruby-text-container;
+   list-style-type: none;
+   font-size: 16px;
+   padding-bottom: 50px;
+}
+
+ul#nav-ul{
+        list-style: none;
+        
+	}
+    
+ul#nav-ul li{
+        display: inline;
+        padding: 10px;
+        text-shadow: 1px 1px 2px #000000;
+    }
+
+
+.nav-image{
+    object-position: top;
+    float: right;
+    background-color: transparent;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 8px 8px 12px purple;
+    color: rgb(230, 11, 238);
+    margin:5px 40px 0;
+}
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    text-align: center;
+    text-shadow: 4px 4px 8px  rgb(7, 9, 126);
+    font-size: 35px;
+    color:  rgb(176, 227, 247);
+    margin:-20px 15px 0;
+}
+
+h3{
+    color: white;
+    text-shadow: 4px 4px 8px black;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+
+button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-shadow: 4px 4px 8px #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 1.5rem
+    
+}
+
+
+
+/*Sidebar Section*/
+
+ul{
+    list-style-type: none;
+}
+
+section#sidebar{
+
+    float: right;
+    position: relative;
+    display: block;
+    margin: 0em 2.5em 0em 2.5em;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    border-top: #2BA967 solid 5px;
+    border-left: #2BA967 solid 5px;
+    border-right: #2BA967 solid 5px;
+    border-bottom: #2BA967 solid 5px;
+    border-radius: 0.5em;
+    text-shadow: 1px 1px 2px #000000;
+    font-size: 16px;
+
+}
+/*Main Section*/
+
+ section#main{
+    float: left;
+    margin: 0 0 1.0em;
+    padding: 0.5em  0 1.0em 0.5em;
+    display: block;
+    border-radius: 2em;
+    box-shadow: 1px 1px 5px
+ }   
+    
+section div.images{
+
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 575px;
+    margin: 0 0.5em 1.0em 0.5em;
+    padding: 0.5em;
+    background-color: transparent;
+    border:  #2BA967 solid 5px;
+    border-radius: 0.5em;
+
+}
+
+
+/*Footer*/
+
+
+footer {
+    background-color: transparent;
+    position: sticky;
+    right: 0;
+    bottom: 2;
+    left: 0;
+    font-size: 12px;
+    text-align: right;  
+
+}
+
+ /*About Us*/
+
+ section div.aboutus-image {
+  display: block;
+  text-align: center;
+  width: 300px;
+  margin: 0 0.5em 0em 0.5em;
+  padding: 0em;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 3em;
+  margin-right: 5em;
+  text-justify: auto;
+}
+
+/*Photo Gallery*/
+.slider-holder{
+  width: 800px;
+  height: 400px;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  text-align: center;
+  overflow: hidden;
+  }
+
+  .image-holder{
+  width: 2400px;
+  height: 400px;
+  background-color: transparent;
+  clear: both;
+  position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+  }
+
+  .slider-image{
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 800px;
+  height: 400px;
+  }
+
+  #slider-image-1:target ~ .image-holder{
+  left: 0px;
+  }
+
+  #slider-image-2:target ~ .image-holder{
+   left: -800px;
+  }
+
+  #slider-image-3:target ~ .image-holder{
+  left: -1600px;
+  }
+
+  .button-holder{
+  position: relative;
+  top: -20px;
+  }
+
+  .slider-change{
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color:  rgb(7, 9, 126);
+  }
